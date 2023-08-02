@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+
+const items = [
+  { emoji: "🍎", text: "A", cost: 25 },
+  { emoji: "🍪", text: "B", cost: 50 },
+  { emoji: "🥤", text: "C", cost: 150 },
+  { emoji: "🍺", text: "D", cost: 375 },
+  { emoji: "🍷", text: "E", cost: 550 },
+  { emoji: "🍰", text: "F", cost: 975 },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
     </div>
   );
 }
