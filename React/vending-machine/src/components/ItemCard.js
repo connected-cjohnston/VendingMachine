@@ -1,7 +1,28 @@
-import React from "react";
+import {
+  Card,
+  CardContent,
+  Typography,
+  CardActions,
+  Button,
+} from "@mui/material";
 
-function ItemCard() {
-  return <div></div>
-}
+const ItemCard = ({ buttonEmoji, buttonText, cost, handleClick }) => {
+  return (
+    <Card sx={{ maxWidth: 120 }}>
+      <CardContent sx={{ textAlign: "center" }}>
+        <Typography variant="h3">{buttonEmoji}</Typography>
+
+        <CardActions sx={{ textAlign: "center" }}>
+          <Button
+            variant="contained"
+            onClick={() => handleClick(buttonEmoji, cost)}
+          >
+            {buttonText}
+          </Button>
+        </CardActions>
+      </CardContent>
+    </Card>
+  );
+};
 
 export default ItemCard;
